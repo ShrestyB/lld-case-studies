@@ -13,11 +13,7 @@ place (and which were rejected), and whether the design survives a change in req
 
 | # | Problem | Status | Core design question | Patterns that earned their place | Change test |
 |---|---|---|---|---|---|
-| 1 | [Vending machine](./vending-machine) | ✅ Complete | Behaviour depends on *when* you are, *who* is asking, and *how* money arrives | State · Strategy (via DIP) · role interfaces (ISP) | Add card payments → **0 existing classes edited** |
-| 2 | Parking lot | 🔄 In progress | Allocation and pricing vary independently of the lot | Strategy · Factory | Add EV charging spots |
-| 3 | LRU cache | ⏳ Planned | O(1) `get`/`put` needs a hashmap *and* an ordering | Strategy (eviction policy) | Switch the policy to LFU |
-| 4 | Rate limiter | ⏳ Planned | The limiting algorithm must be swappable per client | Strategy · Decorator | Add a per-user tier |
-
+| 1 | [Vending machine](./vending-machine) |  Complete | Behaviour depends on *when* you are, *who* is asking, and *how* money arrives | 
 ---
 
 ## How to read a case study
